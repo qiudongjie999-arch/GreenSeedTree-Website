@@ -6,6 +6,29 @@
     <title>青稷树 GreenSeedTree - AI定制化解决方案专家</title>
     <meta name="description" content="从需求诊断到工具落地，一站式AI定制解决方案。我们帮助企业用AI提升效率、降低成本、实现业务增长。">
     <meta name="keywords" content="AI定制,AI解决方案,人工智能,工作流自动化,企业数字化转型">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2316a34a'/%3E%3Cstop offset='100%25' style='stop-color:%2322c55e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='45' fill='url(%23grad)'/%3E%3Cpath d='M50 20 L50 80 M30 40 L50 20 L70 40 M35 60 Q50 75 65 60' stroke='white' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2316a34a'/%3E%3Cstop offset='100%25' style='stop-color:%2322c55e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='45' fill='url(%23grad)'/%3E%3Cpath d='M50 20 L50 80 M30 40 L50 20 L70 40 M35 60 Q50 75 65 60' stroke='white' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="青稷树 GreenSeedTree - AI定制化解决方案专家">
+    <meta property="og:description" content="从需求诊断到工具落地，一站式AI定制解决方案。我们帮助企业用AI提升效率、降低成本、实现业务增长。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.greenseedtree.com">
+    <meta property="og:image" content="https://www.greenseedtree.com/logo-brand.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="青稷树 GreenSeedTree">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="青稷树 GreenSeedTree - AI定制化解决方案专家">
+    <meta name="twitter:description" content="从需求诊断到工具落地，一站式AI定制解决方案。">
+    <meta name="twitter:image" content="https://www.greenseedtree.com/logo-brand.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.greenseedtree.com">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,6 +139,7 @@
                     <span class="text-xl font-bold text-dark-900">青稷树</span>
                 </div>
                 
+                <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#solutions" class="text-dark-600 hover:text-primary-600 transition-colors">解决方案</a>
                     <a href="#cases" class="text-dark-600 hover:text-primary-600 transition-colors">客户案例</a>
@@ -123,9 +147,30 @@
                     <a href="#about" class="text-dark-600 hover:text-primary-600 transition-colors">关于我们</a>
                 </div>
                 
-                <div class="flex items-center space-x-4">
+                <div class="hidden md:flex items-center space-x-4">
                     <a href="#contact" class="hidden sm:inline-flex px-4 py-2 text-dark-600 hover:text-primary-600 transition-colors">联系我们</a>
                     <a href="#contact" class="inline-flex px-5 py-2.5 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-medium">
+                        免费诊断
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-dark-100 transition-colors">
+                    <svg class="w-6 h-6 text-dark-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3 pt-4 border-t border-dark-100">
+                    <a href="#solutions" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors">解决方案</a>
+                    <a href="#cases" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors">客户案例</a>
+                    <a href="#process" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors">服务流程</a>
+                    <a href="#about" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors">关于我们</a>
+                    <a href="#contact" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors">联系我们</a>
+                    <a href="#contact" class="mx-4 mt-2 px-5 py-3 bg-primary-600 text-white text-center rounded-lg hover:bg-primary-700 transition-colors font-medium">
                         免费诊断
                     </a>
                 </div>
@@ -1437,9 +1482,30 @@
                 <div>
                     <h4 class="font-semibold mb-4">联系方式</h4>
                     <ul class="space-y-2 text-sm text-dark-400">
-                        <li>邮箱: contact@greenseedtree.com</li>
-                        <li>微信: GreenSeedTree</li>
-                        <li>网站: www.greenseedtree.com</li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span>130-6565-9915</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>qiudongjie999@gmail.com</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.045c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-7.062-6.122zm-2.036 2.96c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982z"/>
+                            </svg>
+                            <span>GreenSeedTree</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                            </svg>
+                            <span>www.greenseedtree.com</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1451,6 +1517,29 @@
     </footer>
 
     <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Toggle icon between hamburger and X
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+        
+        // Close mobile menu when clicking on a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+        
         // Solution Tabs
         const solutionTabs = document.querySelectorAll('.solution-tab');
         const solutionPanels = document.querySelectorAll('.solution-panel');
