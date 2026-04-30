@@ -141,15 +141,34 @@
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#solutions" class="text-dark-600 hover:text-primary-600 transition-colors">解决方案</a>
-                    <a href="#cases" class="text-dark-600 hover:text-primary-600 transition-colors">客户案例</a>
-                    <a href="#process" class="text-dark-600 hover:text-primary-600 transition-colors">服务流程</a>
-                    <a href="#about" class="text-dark-600 hover:text-primary-600 transition-colors">关于我们</a>
+                    <a href="#solutions" class="text-dark-600 hover:text-primary-600 transition-colors" data-i18n="nav.solutions">解决方案</a>
+                    <a href="#cases" class="text-dark-600 hover:text-primary-600 transition-colors" data-i18n="nav.cases">客户案例</a>
+                    <a href="#process" class="text-dark-600 hover:text-primary-600 transition-colors" data-i18n="nav.process">服务流程</a>
+                    <a href="#about" class="text-dark-600 hover:text-primary-600 transition-colors" data-i18n="nav.about">关于我们</a>
                 </div>
                 
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="#contact" class="hidden sm:inline-flex px-4 py-2 text-dark-600 hover:text-primary-600 transition-colors">联系我们</a>
-                    <a href="#contact" class="inline-flex px-5 py-2.5 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-medium">
+                    <!-- Language Switcher -->
+                    <div class="relative" id="lang-switcher">
+                        <button id="lang-btn" class="flex items-center space-x-1 px-3 py-2 text-dark-600 hover:text-primary-600 transition-colors rounded-lg hover:bg-dark-50">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+                            </svg>
+                            <span id="current-lang">中文</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div id="lang-dropdown" class="hidden absolute right-0 mt-2 w-40 bg-white rounded-xl shadow-lg border border-dark-100 py-2 z-50">
+                            <button class="lang-option w-full px-4 py-2 text-left text-dark-700 hover:bg-primary-50 hover:text-primary-600 transition-colors" data-lang="zh">🇨🇳 中文</button>
+                            <button class="lang-option w-full px-4 py-2 text-left text-dark-700 hover:bg-primary-50 hover:text-primary-600 transition-colors" data-lang="en">🇺🇸 English</button>
+                            <button class="lang-option w-full px-4 py-2 text-left text-dark-700 hover:bg-primary-50 hover:text-primary-600 transition-colors" data-lang="ja">🇯🇵 日本語</button>
+                            <button class="lang-option w-full px-4 py-2 text-left text-dark-700 hover:bg-primary-50 hover:text-primary-600 transition-colors" data-lang="fr">🇫🇷 Français</button>
+                            <button class="lang-option w-full px-4 py-2 text-left text-dark-700 hover:bg-primary-50 hover:text-primary-600 transition-colors" data-lang="de">🇩🇪 Deutsch</button>
+                        </div>
+                    </div>
+                    <a href="#contact" class="hidden sm:inline-flex px-4 py-2 text-dark-600 hover:text-primary-600 transition-colors" data-i18n="nav.contact">联系我们</a>
+                    <a href="#contact" class="inline-flex px-5 py-2.5 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-medium" data-i18n="nav.cta">
                         免费诊断
                     </a>
                 </div>
@@ -165,12 +184,12 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col space-y-3 pt-4 border-t border-dark-100">
-                    <a href="#solutions" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors">解决方案</a>
-                    <a href="#cases" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors">客户案例</a>
-                    <a href="#process" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors">服务流程</a>
-                    <a href="#about" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors">关于我们</a>
-                    <a href="#contact" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors">联系我们</a>
-                    <a href="#contact" class="mx-4 mt-2 px-5 py-3 bg-primary-600 text-white text-center rounded-lg hover:bg-primary-700 transition-colors font-medium">
+                    <a href="#solutions" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors" data-i18n="nav.solutions">解决方案</a>
+                    <a href="#cases" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors" data-i18n="nav.cases">客户案例</a>
+                    <a href="#process" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors" data-i18n="nav.process">服务流程</a>
+                    <a href="#about" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors" data-i18n="nav.about">关于我们</a>
+                    <a href="#contact" class="px-4 py-2 text-dark-600 hover:text-primary-600 hover:bg-dark-50 rounded-lg transition-colors" data-i18n="nav.contact">联系我们</a>
+                    <a href="#contact" class="mx-4 mt-2 px-5 py-3 bg-primary-600 text-white text-center rounded-lg hover:bg-primary-700 transition-colors font-medium" data-i18n="nav.cta">
                         免费诊断
                     </a>
                 </div>
@@ -185,31 +204,31 @@
                 <div class="fade-in">
                     <div class="inline-flex items-center px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6">
                         <span class="w-2 h-2 bg-primary-500 rounded-full mr-2 pulse-dot"></span>
-                        青稷树 · 已服务 50+ 企业客户
+                        <span data-i18n="hero.badge">青稷树 · 已服务 50+ 企业客户</span>
                     </div>
                     <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-dark-900 leading-tight mb-6">
-                        为每个企业<br/>
-                        <span class="gradient-text">播下AI的种子</span>
+                        <span data-i18n="hero.title1">为每个企业</span><br/>
+                        <span class="gradient-text" data-i18n="hero.title2">播下AI的种子</span>
                     </h1>
                     <p class="text-lg lg:text-xl text-dark-600 mb-8 leading-relaxed">
-                        从播种到收获，陪伴企业AI转型。<br/>
-                        我们不只是交付工具，更是培育能力。
+                        <span data-i18n="hero.subtitle1">从播种到收获，陪伴企业AI转型。</span><br/>
+                        <span data-i18n="hero.subtitle2">我们不只是交付工具，更是培育能力。</span>
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white rounded-xl hover:bg-primary-700 transition-all font-medium text-lg shadow-lg shadow-primary-600/30">
-                            免费获取诊断报告
+                            <span data-i18n="hero.cta1">免费获取诊断报告</span>
                             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                             </svg>
                         </a>
                         <a href="#cases" class="inline-flex items-center justify-center px-8 py-4 bg-white text-dark-700 rounded-xl hover:bg-dark-50 transition-all font-medium text-lg border border-dark-200">
-                            查看客户案例
+                            <span data-i18n="hero.cta2">查看客户案例</span>
                         </a>
                     </div>
                     
                     <!-- Trust Indicators -->
                     <div class="mt-12 pt-8 border-t border-dark-200">
-                        <p class="text-sm text-dark-500 mb-4">他们都在用GreenSeedTree的AI解决方案</p>
+                        <p class="text-sm text-dark-500 mb-4" data-i18n="hero.trust">他们都在用GreenSeedTree的AI解决方案</p>
                         <div class="flex flex-wrap gap-6 items-center opacity-60">
                             <span class="text-lg font-semibold text-dark-700">跨境电商</span>
                             <span class="text-lg font-semibold text-dark-700">制造业</span>
@@ -1517,6 +1536,492 @@
     </footer>
 
     <script>
+        // ===== Internationalization (i18n) System =====
+        const translations = {
+            zh: {
+                // Navigation
+                'nav.solutions': '解决方案',
+                'nav.cases': '客户案例',
+                'nav.process': '服务流程',
+                'nav.about': '关于我们',
+                'nav.contact': '联系我们',
+                'nav.cta': '免费诊断',
+                
+                // Hero
+                'hero.badge': '青稷树 · 已服务 50+ 企业客户',
+                'hero.title1': '为每个企业',
+                'hero.title2': '播下AI的种子',
+                'hero.subtitle1': '从播种到收获，陪伴企业AI转型。',
+                'hero.subtitle2': '我们不只是交付工具，更是培育能力。',
+                'hero.cta1': '免费获取诊断报告',
+                'hero.cta2': '查看客户案例',
+                'hero.trust': '他们都在用GreenSeedTree的AI解决方案',
+                
+                // Pain Points
+                'pain.title': 'AI很火，但落地很难',
+                'pain.subtitle': '很多企业想用AI，却在实际落地时遇到了这些困境',
+                'pain1.title': '概念满天飞，不知道怎么用',
+                'pain1.desc': 'ChatGPT、Claude、Midjourney...工具很多，但不知道哪个适合自己的业务场景',
+                'pain2.title': '找了服务商，交付的东西用不起来',
+                'pain2.desc': '花了钱做了系统，但和实际业务脱节，员工不爱用，最后变成摆设',
+                'pain3.title': '买了AI工具，员工不会用',
+                'pain3.desc': '工具再好，没人会用也是白搭。缺少培训和陪跑，工具变成"摆设"',
+                'pain4.title': '想定制开发，需求说不清楚',
+                'pain4.desc': '知道自己想要什么效果，但不知道怎么描述，和开发者沟通成本高',
+                
+                // Solutions
+                'solutions.title': '按行业定制AI解决方案',
+                'solutions.subtitle': '不同行业有不同的AI应用场景，我们深耕四大领域，提供针对性解决方案',
+                'solutions.tab1': '自媒体创作者',
+                'solutions.tab2': '跨境电商企业',
+                'solutions.tab3': '制造业/工厂',
+                'solutions.tab4': '传统行业老板',
+                
+                // Cases
+                'cases.title': '客户案例',
+                'cases.subtitle': '真实案例，真实效果。我们不讲故事，只展示数据。',
+                'cases.more': '查看更多案例',
+                
+                // Process
+                'process.title': '服务流程',
+                'process.subtitle': '从需求诊断到工具落地，5步完成AI转型',
+                'process.step1.title': '需求诊断',
+                'process.step1.desc': '深入了解业务场景，识别AI应用机会点',
+                'process.step2.title': '方案设计',
+                'process.step2.desc': '定制化解决方案，明确技术路径和预期效果',
+                'process.step3.title': '工具开发',
+                'process.step3.desc': '敏捷开发，快速迭代，确保工具贴合业务',
+                'process.step4.title': '部署培训',
+                'process.step4.desc': '现场部署，员工培训，确保工具真正用起来',
+                'process.step5.title': '持续优化',
+                'process.step5.desc': '数据监控，效果追踪，持续迭代优化',
+                
+                // About
+                'about.title': '关于 青稷树',
+                'about.clients': '服务客户',
+                'about.projects': '交付项目',
+                'about.satisfaction': '客户满意度',
+                
+                // Contact
+                'contact.title': '免费获取AI诊断报告',
+                'contact.subtitle': '告诉我们你的业务场景，我们帮你识别AI应用机会点，出具详细的诊断报告和解决方案建议。',
+                'contact.item1': '30分钟需求沟通',
+                'contact.item2': 'AI应用场景分析',
+                'contact.item3': '定制化解决方案建议',
+                'contact.item4': '投入产出预估',
+                'contact.form.title': '填写信息，获取诊断报告',
+                'contact.form.name': '姓名',
+                'contact.form.phone': '手机号',
+                'contact.form.industry': '行业类型',
+                'contact.form.message': '你的需求或痛点',
+                'contact.form.submit': '提交并获取诊断报告',
+                'contact.form.notice': '提交即表示同意我们会在24小时内联系你',
+                
+                // Footer
+                'footer.slogan': '为每个企业播下AI的种子',
+                'footer.solutions': '解决方案',
+                'footer.services': '服务',
+                'footer.contact': '联系方式',
+                'footer.copyright': '© 2026 青稷树 GreenSeedTree. All rights reserved.'
+            },
+            en: {
+                // Navigation
+                'nav.solutions': 'Solutions',
+                'nav.cases': 'Cases',
+                'nav.process': 'Process',
+                'nav.about': 'About',
+                'nav.contact': 'Contact',
+                'nav.cta': 'Free Diagnosis',
+                
+                // Hero
+                'hero.badge': 'GreenSeedTree · Served 50+ Enterprise Clients',
+                'hero.title1': 'Planting AI Seeds',
+                'hero.title2': 'For Every Business',
+                'hero.subtitle1': 'From seeding to harvest, accompanying your AI transformation.',
+                'hero.subtitle2': 'We deliver not just tools, but capabilities.',
+                'hero.cta1': 'Get Free Diagnosis Report',
+                'hero.cta2': 'View Client Cases',
+                'hero.trust': 'Trusted by companies across industries',
+                
+                // Pain Points
+                'pain.title': 'AI is Hot, But Implementation is Hard',
+                'pain.subtitle': 'Many companies want to use AI but face these challenges',
+                'pain1.title': 'Too many concepts, don\'t know where to start',
+                'pain1.desc': 'ChatGPT, Claude, Midjourney... many tools, but which one fits your business?',
+                'pain2.title': 'Hired vendors, but deliverables don\'t work',
+                'pain2.desc': 'Spent money on systems that don\'t match business needs, employees won\'t use them',
+                'pain3.title': 'Bought AI tools, employees can\'t use them',
+                'pain3.desc': 'Great tools are useless without proper training and support',
+                'pain4.title': 'Want customization, can\'t articulate needs',
+                'pain4.desc': 'Know what you want but can\'t describe it, high communication costs',
+                
+                // Solutions
+                'solutions.title': 'Industry-Specific AI Solutions',
+                'solutions.subtitle': 'Different industries have different AI scenarios. We specialize in four key sectors',
+                'solutions.tab1': 'Content Creators',
+                'solutions.tab2': 'Cross-border E-commerce',
+                'solutions.tab3': 'Manufacturing',
+                'solutions.tab4': 'Traditional Business',
+                
+                // Cases
+                'cases.title': 'Client Cases',
+                'cases.subtitle': 'Real cases, real results. We show data, not stories.',
+                'cases.more': 'View More Cases',
+                
+                // Process
+                'process.title': 'Service Process',
+                'process.subtitle': 'From diagnosis to implementation, 5 steps to AI transformation',
+                'process.step1.title': 'Diagnosis',
+                'process.step1.desc': 'Deep dive into business scenarios, identify AI opportunities',
+                'process.step2.title': 'Solution Design',
+                'process.step2.desc': 'Customized solutions with clear technical roadmap',
+                'process.step3.title': 'Development',
+                'process.step3.desc': 'Agile development, rapid iteration, business-aligned tools',
+                'process.step4.title': 'Deployment & Training',
+                'process.step4.desc': 'On-site deployment, employee training, ensure adoption',
+                'process.step5.title': 'Optimization',
+                'process.step5.desc': 'Data monitoring, performance tracking, continuous improvement',
+                
+                // About
+                'about.title': 'About GreenSeedTree',
+                'about.clients': 'Clients Served',
+                'about.projects': 'Projects Delivered',
+                'about.satisfaction': 'Client Satisfaction',
+                
+                // Contact
+                'contact.title': 'Get Your Free AI Diagnosis Report',
+                'contact.subtitle': 'Tell us about your business, we\'ll identify AI opportunities and provide detailed recommendations.',
+                'contact.item1': '30-minute consultation',
+                'contact.item2': 'AI scenario analysis',
+                'contact.item3': 'Custom solution recommendations',
+                'contact.item4': 'ROI estimation',
+                'contact.form.title': 'Fill in your information',
+                'contact.form.name': 'Name',
+                'contact.form.phone': 'Phone',
+                'contact.form.industry': 'Industry',
+                'contact.form.message': 'Your needs or challenges',
+                'contact.form.submit': 'Submit & Get Report',
+                'contact.form.notice': 'We\'ll contact you within 24 hours',
+                
+                // Footer
+                'footer.slogan': 'Planting AI Seeds for Every Business',
+                'footer.solutions': 'Solutions',
+                'footer.services': 'Services',
+                'footer.contact': 'Contact',
+                'footer.copyright': '© 2026 GreenSeedTree. All rights reserved.'
+            },
+            ja: {
+                // Navigation
+                'nav.solutions': 'ソリューション',
+                'nav.cases': '導入事例',
+                'nav.process': 'サービス流程',
+                'nav.about': '会社概要',
+                'nav.contact': 'お問い合わせ',
+                'nav.cta': '無料診断',
+                
+                // Hero
+                'hero.badge': 'GreenSeedTree · 50社以上の企業にサービス提供',
+                'hero.title1': 'すべての企業に',
+                'hero.title2': 'AIの種を蒔く',
+                'hero.subtitle1': '種まきから収穫まで、企業のAI変革を伴走します。',
+                'hero.subtitle2': '私たちはツールを届けるだけでなく、能力を育みます。',
+                'hero.cta1': '無料診断レポートを入手',
+                'hero.cta2': '導入事例を見る',
+                'hero.trust': '各業界の企業から信頼されています',
+                
+                // Pain Points
+                'pain.title': 'AIは人気だが、実装は難しい',
+                'pain.subtitle': '多くの企業がAIを使いたいと考えていますが、実装で課題に直面しています',
+                'pain1.title': '概念が多すぎて、どこから始めればいいかわからない',
+                'pain1.desc': 'ChatGPT、Claude、Midjourney...多くのツールがあるが、どれが自社に適しているか不明',
+                'pain2.title': 'ベンダーに依頼したが、成果物が使えない',
+                'pain2.desc': 'システムにお金をかけたが、ビジネスニーズに合わず、従業員が使わない',
+                'pain3.title': 'AIツールを購入したが、従業員が使えない',
+                'pain3.desc': '良いツールも、適切なトレーニングなしでは役に立たない',
+                'pain4.title': 'カスタマイズしたいが、要件をうまく伝えられない',
+                'pain4.desc': '欲しいものはわかっているが、説明できず、コミュニケーションコストが高い',
+                
+                // Solutions
+                'solutions.title': '業界別AIソリューション',
+                'solutions.subtitle': '業界によってAI活用シーンは異なります。4つの主要分野を専門としています',
+                'solutions.tab1': 'コンテンツクリエイター',
+                'solutions.tab2': '越境EC',
+                'solutions.tab3': '製造業',
+                'solutions.tab4': '伝統的ビジネス',
+                
+                // Cases
+                'cases.title': '導入事例',
+                'cases.subtitle': '実際の事例、実際の成果。ストーリーではなくデータを提示します。',
+                'cases.more': 'もっと見る',
+                
+                // Process
+                'process.title': 'サービス流程',
+                'process.subtitle': '診断から実装まで、5つのステップでAI変革を実現',
+                'process.step1.title': '診断',
+                'process.step1.desc': 'ビジネスシーンを深く理解し、AI活用機会を特定',
+                'process.step2.title': 'ソリューション設計',
+                'process.step2.desc': 'カスタマイズされたソリューションと明確な技術ロードマップ',
+                'process.step3.title': '開発',
+                'process.step3.desc': 'アジャイル開発、迅速な反復、ビジネスに適したツール',
+                'process.step4.title': '導入・トレーニング',
+                'process.step4.desc': 'オンサイト導入、従業員トレーニング、利用促進',
+                'process.step5.title': '最適化',
+                'process.step5.desc': 'データモニタリング、パフォーマンス追跡、継続的改善',
+                
+                // About
+                'about.title': 'GreenSeedTreeについて',
+                'about.clients': 'サービス提供先',
+                'about.projects': '完了プロジェクト',
+                'about.satisfaction': '顧客満足度',
+                
+                // Contact
+                'contact.title': '無料AI診断レポートを入手',
+                'contact.subtitle': 'あなたのビジネスについて教えてください。AI活用機会を特定し、詳細な推奨事項を提供します。',
+                'contact.item1': '30分の相談',
+                'contact.item2': 'AIシナリオ分析',
+                'contact.item3': 'カスタムソリューションの推奨',
+                'contact.item4': 'ROI見積もり',
+                'contact.form.title': '情報を入力してください',
+                'contact.form.name': '氏名',
+                'contact.form.phone': '電話番号',
+                'contact.form.industry': '業種',
+                'contact.form.message': 'ニーズや課題',
+                'contact.form.submit': '送信してレポートを入手',
+                'contact.form.notice': '24時間以内にご連絡します',
+                
+                // Footer
+                'footer.slogan': 'すべての企業にAIの種を蒔く',
+                'footer.solutions': 'ソリューション',
+                'footer.services': 'サービス',
+                'footer.contact': 'お問い合わせ',
+                'footer.copyright': '© 2026 GreenSeedTree. All rights reserved.'
+            },
+            fr: {
+                // Navigation
+                'nav.solutions': 'Solutions',
+                'nav.cases': 'Cas Clients',
+                'nav.process': 'Processus',
+                'nav.about': 'À Propos',
+                'nav.contact': 'Contact',
+                'nav.cta': 'Diagnostic Gratuit',
+                
+                // Hero
+                'hero.badge': 'GreenSeedTree · Plus de 50 clients entreprises',
+                'hero.title1': 'Planter des graines IA',
+                'hero.title2': 'Pour chaque entreprise',
+                'hero.subtitle1': 'De la semence à la récolte, accompagnons votre transformation IA.',
+                'hero.subtitle2': 'Nous ne livrons pas seulement des outils, nous cultivons des capacités.',
+                'hero.cta1': 'Obtenir un Rapport de Diagnostic Gratuit',
+                'hero.cta2': 'Voir les Cas Clients',
+                'hero.trust': 'Confiance des entreprises de tous les secteurs',
+                
+                // Pain Points
+                'pain.title': 'L\'IA est tendance, mais l\'implémentation est difficile',
+                'pain.subtitle': 'De nombreuses entreprises veulent utiliser l\'IA mais rencontrent ces défis',
+                'pain1.title': 'Trop de concepts, par où commencer ?',
+                'pain1.desc': 'ChatGPT, Claude, Midjourney... beaucoup d\'outils, mais lequel correspond à votre entreprise ?',
+                'pain2.title': 'Prestataires engagés, mais résultats inutilisables',
+                'pain2.desc': 'Argent dépensé pour des systèmes qui ne correspondent pas aux besoins, les employés ne les utilisent pas',
+                'pain3.title': 'Outils IA achetés, employés incapables de les utiliser',
+                'pain3.desc': 'De bons outils sont inutiles sans formation et support appropriés',
+                'pain4.title': 'Personnalisation souhaitée, besoins difficiles à exprimer',
+                'pain4.desc': 'Vous savez ce que vous voulez mais ne pouvez pas le décrire, coûts de communication élevés',
+                
+                // Solutions
+                'solutions.title': 'Solutions IA par Secteur',
+                'solutions.subtitle': 'Différents secteurs ont différents scénarios IA. Nous nous spécialisons dans quatre domaines clés',
+                'solutions.tab1': 'Créateurs de Contenu',
+                'solutions.tab2': 'E-commerce Transfrontalier',
+                'solutions.tab3': 'Fabrication',
+                'solutions.tab4': 'Entreprises Traditionnelles',
+                
+                // Cases
+                'cases.title': 'Cas Clients',
+                'cases.subtitle': 'Cas réels, résultats réels. Nous montrons des données, pas des histoires.',
+                'cases.more': 'Voir Plus de Cas',
+                
+                // Process
+                'process.title': 'Processus de Service',
+                'process.subtitle': 'Du diagnostic à l\'implémentation, 5 étapes vers la transformation IA',
+                'process.step1.title': 'Diagnostic',
+                'process.step1.desc': 'Analyse approfondie des scénarios métier, identification des opportunités IA',
+                'process.step2.title': 'Conception Solution',
+                'process.step2.desc': 'Solutions personnalisées avec feuille de route technique claire',
+                'process.step3.title': 'Développement',
+                'process.step3.desc': 'Développement agile, itération rapide, outils alignés sur le métier',
+                'process.step4.title': 'Déploiement & Formation',
+                'process.step4.desc': 'Déploiement sur site, formation des employés, adoption garantie',
+                'process.step5.title': 'Optimisation',
+                'process.step5.desc': 'Surveillance des données, suivi des performances, amélioration continue',
+                
+                // About
+                'about.title': 'À Propos de GreenSeedTree',
+                'about.clients': 'Clients Servis',
+                'about.projects': 'Projets Livrés',
+                'about.satisfaction': 'Satisfaction Client',
+                
+                // Contact
+                'contact.title': 'Obtenez Votre Rapport de Diagnostic IA Gratuit',
+                'contact.subtitle': 'Parlez-nous de votre entreprise, nous identifierons les opportunités IA et fournirons des recommandations détaillées.',
+                'contact.item1': 'Consultation de 30 minutes',
+                'contact.item2': 'Analyse des scénarios IA',
+                'contact.item3': 'Recommandations de solutions personnalisées',
+                'contact.item4': 'Estimation du ROI',
+                'contact.form.title': 'Remplissez vos informations',
+                'contact.form.name': 'Nom',
+                'contact.form.phone': 'Téléphone',
+                'contact.form.industry': 'Secteur',
+                'contact.form.message': 'Vos besoins ou défis',
+                'contact.form.submit': 'Soumettre & Obtenir le Rapport',
+                'contact.form.notice': 'Nous vous contacterons dans les 24 heures',
+                
+                // Footer
+                'footer.slogan': 'Planter des graines IA pour chaque entreprise',
+                'footer.solutions': 'Solutions',
+                'footer.services': 'Services',
+                'footer.contact': 'Contact',
+                'footer.copyright': '© 2026 GreenSeedTree. Tous droits réservés.'
+            },
+            de: {
+                // Navigation
+                'nav.solutions': 'Lösungen',
+                'nav.cases': 'Kundenfälle',
+                'nav.process': 'Prozess',
+                'nav.about': 'Über uns',
+                'nav.contact': 'Kontakt',
+                'nav.cta': 'Kostenlose Diagnose',
+                
+                // Hero
+                'hero.badge': 'GreenSeedTree · Über 50 Unternehmenskunden',
+                'hero.title1': 'KI-Samen pflanzen',
+                'hero.title2': 'Für jedes Unternehmen',
+                'hero.subtitle1': 'Von der Aussaat bis zur Ernte begleiten wir Ihre KI-Transformation.',
+                'hero.subtitle2': 'Wir liefern nicht nur Werkzeuge, wir kultivieren Fähigkeiten.',
+                'hero.cta1': 'Kostenlosen Diagnosebericht erhalten',
+                'hero.cta2': 'Kundenfälle ansehen',
+                'hero.trust': 'Vertrauen von Unternehmen aus allen Branchen',
+                
+                // Pain Points
+                'pain.title': 'KI ist angesagt, aber die Umsetzung ist schwierig',
+                'pain.subtitle': 'Viele Unternehmen möchten KI nutzen, stehen aber vor diesen Herausforderungen',
+                'pain1.title': 'Zu viele Konzepte, wo anfangen?',
+                'pain1.desc': 'ChatGPT, Claude, Midjourney... viele Tools, aber welches passt zu Ihrem Unternehmen?',
+                'pain2.title': 'Dienstleister beauftragt, Ergebnisse unbrauchbar',
+                'pain2.desc': 'Geld für Systeme ausgegeben, die nicht zu den Anforderungen passen, Mitarbeiter nutzen sie nicht',
+                'pain3.title': 'KI-Tools gekauft, Mitarbeiter können sie nicht nutzen',
+                'pain3.desc': 'Gute Tools sind ohne richtige Schulung und Unterstützung nutzlos',
+                'pain4.title': 'Anpassung gewünscht, Anforderungen schwer zu beschreiben',
+                'pain4.desc': 'Sie wissen was Sie wollen, können es aber nicht beschreiben, hohe Kommunikationskosten',
+                
+                // Solutions
+                'solutions.title': 'Branchenspezifische KI-Lösungen',
+                'solutions.subtitle': 'Unterschiedliche Branchen haben unterschiedliche KI-Szenarien. Wir spezialisieren uns auf vier Schlüsselsektoren',
+                'solutions.tab1': 'Content-Ersteller',
+                'solutions.tab2': 'Cross-Border-E-Commerce',
+                'solutions.tab3': 'Fertigung',
+                'solutions.tab4': 'Traditionelles Geschäft',
+                
+                // Cases
+                'cases.title': 'Kundenfälle',
+                'cases.subtitle': 'Echte Fälle, echte Ergebnisse. Wir zeigen Daten, keine Geschichten.',
+                'cases.more': 'Mehr Fälle ansehen',
+                
+                // Process
+                'process.title': 'Service-Prozess',
+                'process.subtitle': 'Von der Diagnose zur Implementierung, 5 Schritte zur KI-Transformation',
+                'process.step1.title': 'Diagnose',
+                'process.step1.desc': 'Tiefe Analyse der Geschäftsszenarien, Identifizierung von KI-Möglichkeiten',
+                'process.step2.title': 'Lösungsdesign',
+                'process.step2.desc': 'Maßgeschneiderte Lösungen mit klarem technischen Fahrplan',
+                'process.step3.title': 'Entwicklung',
+                'process.step3.desc': 'Agile Entwicklung, schnelle Iteration, geschäftsorientierte Tools',
+                'process.step4.title': 'Bereitstellung & Schulung',
+                'process.step4.desc': 'Vor-Ort-Bereitstellung, Mitarbeiterschulung, Akzeptanz sicherstellen',
+                'process.step5.title': 'Optimierung',
+                'process.step5.desc': 'Datenüberwachung, Leistungsverfolgung, kontinuierliche Verbesserung',
+                
+                // About
+                'about.title': 'Über GreenSeedTree',
+                'about.clients': 'Betreute Kunden',
+                'about.projects': 'Gelieferte Projekte',
+                'about.satisfaction': 'Kundenzufriedenheit',
+                
+                // Contact
+                'contact.title': 'Holen Sie sich Ihren kostenlosen KI-Diagnosebericht',
+                'contact.subtitle': 'Erzählen Sie uns von Ihrem Unternehmen, wir identifizieren KI-Möglichkeiten und liefern detaillierte Empfehlungen.',
+                'contact.item1': '30-minütige Beratung',
+                'contact.item2': 'KI-Szenario-Analyse',
+                'contact.item3': 'Maßgeschneiderte Lösungsempfehlungen',
+                'contact.item4': 'ROI-Schätzung',
+                'contact.form.title': 'Füllen Sie Ihre Informationen aus',
+                'contact.form.name': 'Name',
+                'contact.form.phone': 'Telefon',
+                'contact.form.industry': 'Branche',
+                'contact.form.message': 'Ihre Bedürfnisse oder Herausforderungen',
+                'contact.form.submit': 'Absenden & Bericht erhalten',
+                'contact.form.notice': 'Wir kontaktieren Sie innerhalb von 24 Stunden',
+                
+                // Footer
+                'footer.slogan': 'KI-Samen für jedes Unternehmen pflanzen',
+                'footer.solutions': 'Lösungen',
+                'footer.services': 'Dienste',
+                'footer.contact': 'Kontakt',
+                'footer.copyright': '© 2026 GreenSeedTree. Alle Rechte vorbehalten.'
+            }
+        };
+        
+        // Language names for display
+        const langNames = {
+            zh: '中文',
+            en: 'English',
+            ja: '日本語',
+            fr: 'Français',
+            de: 'Deutsch'
+        };
+        
+        // Current language
+        let currentLang = localStorage.getItem('lang') || 'zh';
+        
+        // Apply translations
+        function applyTranslations(lang) {
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update language button text
+            document.getElementById('current-lang').textContent = langNames[lang];
+            localStorage.setItem('lang', lang);
+        }
+        
+        // Language switcher
+        const langBtn = document.getElementById('lang-btn');
+        const langDropdown = document.getElementById('lang-dropdown');
+        
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langDropdown.classList.toggle('hidden');
+        });
+        
+        document.addEventListener('click', () => {
+            langDropdown.classList.add('hidden');
+        });
+        
+        document.querySelectorAll('.lang-option').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                currentLang = lang;
+                applyTranslations(lang);
+                langDropdown.classList.add('hidden');
+            });
+        });
+        
+        // Apply saved language on page load
+        applyTranslations(currentLang);
+        
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
